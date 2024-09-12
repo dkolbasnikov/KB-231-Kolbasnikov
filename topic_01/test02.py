@@ -1,11 +1,9 @@
-def string_operations(s):
-    print(f"Original String: {s}")
-    print(f"Length of String: {len(s)}")
-    print(f"Uppercase: {s.upper()}")
-    print(f"Lowercase: {s.lower()}")
-    print(f"Does string contain 'world': {'world' in s}")
-    print(f"Replace 'world' with 'Python': {s.replace('world', 'Python')}")
+def string_functions(s):
+    length = len(s)
+    upper_case = s.upper()
+    lower_case = s.lower()
+    return length, upper_case, lower_case
 
-if __name__ == "__main__":
-    text = "Hello, world!"
-    string_operations(text)
+input_string = "Hello World"
+length, upper, lower = string_functions(input_string)
+print(f"Length: {length}, Upper: {upper}, Lower: {lower}")

@@ -1,6 +1,6 @@
 def reverse_string(s):
     return s[::-1]
 
-if __name__ == "__main__":
-    text = "Hello, world!"
-    print(reverse_string(text))
+input_string = "abcdefg123"
+result = reverse_string(input_string)
+print(result)
